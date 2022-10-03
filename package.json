@@ -1,7 +1,7 @@
 {
   "name": "mmjstool",
   "version": "1.0.0",
-  "description": "Mattermost js source code utilities",
+  "description": "sPhoton Chat js source code utilities",
   "main": "mmjstool/build/src/index.js",
   "bin": {
     "mmjstool": "./bin/mmjstool"
@@ -33,7 +33,6 @@
     "@babel/runtime": "7.2.0",
     "babel-eslint": "10.0.1",
     "eslint": "5.12.0",
-    "eslint-config-mattermost": "github:mattermost/eslint-config-mattermost",
     "eslint-plugin-header": "2.0.0",
     "eslint-plugin-import": "2.14.0",
     "eslint-plugin-react": "7.12.3",
