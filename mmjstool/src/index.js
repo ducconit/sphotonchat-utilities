@@ -13,17 +13,17 @@ const ignored = yargs.
         i18nArgs.
             demandCommand(1).
             command('extract-webapp',
-                'Read the source code, find all the translations string from mattermost-webapp and write them to the file mattermost-webapp/i18n/en.json',
+                'Read the source code, find all the translations string from web and write them to the file web/i18n/en.json',
                 () => { /* empty function */ },
                 i18nHandlers.i18nExtractWebapp,
             ).
             command('extract-mobile',
-                'Read the source code, find all the translations string from mattermost-mobile and write them to the file mattermost-mobile/assets/base/i18n/en.json.',
+                'Read the source code, find all the translations string from mobile and write them to the file mobile/assets/base/i18n/en.json.',
                 () => { /* empty function */ },
                 i18nHandlers.i18nExtractMobile,
             ).
             command('combine',
-                'Read the translations string from mattermost-webapp and mattermost-mobile and combine them in a single file',
+                'Read the translations string from web and mobile and combine them in a single file',
                 (combineArgs) => {
                     combineArgs.demandCommand(2).
                         option('output', {
@@ -34,7 +34,7 @@ const ignored = yargs.
                 i18nHandlers.i18nCombine
             ).
             command('split',
-                'Read a set of combined translation files, and split them in mattermost-server and mattermost-web translations',
+                'Read a set of combined translation files, and split them in server and web translations',
                 (splitArgs) => {
                     splitArgs.
                         option('inputs', {
@@ -135,11 +135,11 @@ const ignored = yargs.
             ).
             option('webapp-dir', {
                 describe: 'webapp source code directory',
-                default: '../mattermost-webapp',
+                default: '../web',
             }).
             option('mobile-dir', {
                 describe: 'mobile source code directory',
-                default: '../mattermost-mobile',
+                default: '../mobile',
             });
     }, () => { /* empty function */ }
     ).argv;

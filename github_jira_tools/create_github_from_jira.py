@@ -19,7 +19,7 @@ JIRA: https://mattermost.atlassian.net/browse/MM-{{TICKET}}
 @click.option('--jira-token', '-j', prompt='Your Jira access token', help='The token used to authenticate the user against Jira.')
 @click.option('--jira-username', '-u', prompt='Your Jira username', help='Username of the user to get the ticket information.')
 @click.option('--github-token', '-g', prompt='Your Github access token', help='The token used to authenticate the user against Github.')
-@click.option('--repo', '-r', prompt='Repository', help='The repository which contains the issues. E.g. mattermost/mattermost-server')
+@click.option('--repo', '-r', prompt='Repository', help='The repository which contains the issues. E.g. sphotonchat/server')
 @click.option('--labels', '-l', prompt='Labels', help='The labels to set to the issues', multiple=True)
 @click.option('--dry-run/--no-dry-run', help='Skip actually creating any tickets', default=False)
 @click.option('--debug/--no-debug', help='Dump debugging information.', default=False)

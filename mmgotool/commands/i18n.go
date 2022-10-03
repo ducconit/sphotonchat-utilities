@@ -32,7 +32,7 @@ type Item struct {
 
 var I18nCmd = &cobra.Command{
 	Use:   "i18n",
-	Short: "Management of Mattermost translations",
+	Short: "Management of sPhoton Chat translations",
 }
 
 var ExtractCmd = &cobra.Command{
@@ -69,25 +69,25 @@ var CleanEmptyCmd = &cobra.Command{
 
 func init() {
 	ExtractCmd.Flags().Bool("skip-dynamic", false, "Whether to skip dynamically added translations")
-	ExtractCmd.Flags().String("portal-dir", "../customer-web-server", "Path to folder with the Mattermost Customer Portal source code")
-	ExtractCmd.Flags().String("enterprise-dir", "../enterprise", "Path to folder with the Mattermost enterprise source code")
-	ExtractCmd.Flags().String("mattermost-dir", "./", "Path to folder with the Mattermost source code")
+	ExtractCmd.Flags().String("portal-dir", "../customer-web-server", "Path to folder with the sPhoton Chat Customer Portal source code")
+	ExtractCmd.Flags().String("enterprise-dir", "../enterprise", "Path to folder with the sPhoton Chat enterprise source code")
+	ExtractCmd.Flags().String("mattermost-dir", "./", "Path to folder with the sPhoton Chat source code")
 	ExtractCmd.Flags().Bool("contributor", false, "Allows contributors safely extract translations from source code without removing enterprise messages keys")
 
 	CheckCmd.Flags().Bool("skip-dynamic", false, "Whether to skip dynamically added translations")
-	CheckCmd.Flags().String("portal-dir", "../customer-web-server", "Path to folder with the Mattermost Customer Portal source code")
-	CheckCmd.Flags().String("enterprise-dir", "../enterprise", "Path to folder with the Mattermost enterprise source code")
-	CheckCmd.Flags().String("mattermost-dir", "./", "Path to folder with the Mattermost source code")
+	CheckCmd.Flags().String("portal-dir", "../customer-web-server", "Path to folder with the sPhoton Chat Customer Portal source code")
+	CheckCmd.Flags().String("enterprise-dir", "../enterprise", "Path to folder with the sPhoton Chat enterprise source code")
+	CheckCmd.Flags().String("mattermost-dir", "./", "Path to folder with the sPhoton Chat source code")
 
-	CheckEmptySrcCmd.Flags().String("portal-dir", "../customer-web-server", "Path to folder with the Mattermost Customer Portal source code")
-	CheckEmptySrcCmd.Flags().String("enterprise-dir", "../enterprise", "Path to folder with the Mattermost enterprise source code")
-	CheckEmptySrcCmd.Flags().String("mattermost-dir", "./", "Path to folder with the Mattermost source code")
+	CheckEmptySrcCmd.Flags().String("portal-dir", "../customer-web-server", "Path to folder with the sPhoton Chat Customer Portal source code")
+	CheckEmptySrcCmd.Flags().String("enterprise-dir", "../enterprise", "Path to folder with the sPhoton Chat enterprise source code")
+	CheckEmptySrcCmd.Flags().String("mattermost-dir", "./", "Path to folder with the sPhoton Chat source code")
 
 	CleanEmptyCmd.Flags().Bool("dry-run", false, "Run without applying changes")
 	CleanEmptyCmd.Flags().Bool("check", false, "Throw exit code on empty translation strings")
-	CleanEmptyCmd.Flags().String("portal-dir", "../customer-web-server", "Path to folder with the Mattermost Customer Portal source code")
-	CleanEmptyCmd.Flags().String("enterprise-dir", "../enterprise", "Path to folder with the Mattermost enterprise source code")
-	CleanEmptyCmd.Flags().String("mattermost-dir", "./", "Path to folder with the Mattermost source code")
+	CleanEmptyCmd.Flags().String("portal-dir", "../customer-web-server", "Path to folder with the sPhoton Chat Customer Portal source code")
+	CleanEmptyCmd.Flags().String("enterprise-dir", "../enterprise", "Path to folder with the sPhoton Chat enterprise source code")
+	CleanEmptyCmd.Flags().String("mattermost-dir", "./", "Path to folder with the sPhoton Chat source code")
 
 	I18nCmd.AddCommand(
 		ExtractCmd,

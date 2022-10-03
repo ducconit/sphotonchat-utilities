@@ -13,6 +13,6 @@ func Run(args []string) error {
 
 var RootCmd = &cobra.Command{
 	Use:   "mmgotool",
-	Short: "Mattermost dev utils cli",
-	Long:  `Mattermost cli to help in the development process`,
+	Short: "sPhoton Chat dev utils cli",
+	Long:  `sPhoton Chat cli to help in the development process`,
 }

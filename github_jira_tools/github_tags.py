@@ -3,7 +3,7 @@ from github import Github
 
 @click.command()
 @click.option('--token', '-t', prompt='Your access token', help='The token used to authenticate the user.')
-@click.option('--repo', '-r', prompt='Repository', help='The repository which contains the issues. E.g. mattermost/mattermost-server')
+@click.option('--repo', '-r', prompt='Repository', help='The repository which contains the issues. E.g. sphotonchat/server')
 @click.option('--labels', '-l', prompt='Labels', help='The labels to set to the issues', multiple=True)
 @click.argument('issue-numbers', nargs=-1)
 def cli(token, repo, labels, issue_numbers):
