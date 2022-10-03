@@ -1,5 +1,3 @@
-/* eslint-disable no-console,no-process-exit */
-
 const fs = require('fs');
 const path = require('path');
 

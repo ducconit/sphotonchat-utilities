@@ -1,7 +1,4 @@
 {
-  "extends": [
-    "./node_modules/eslint-config-mattermost/configs/.eslintrc.json"
-  ],
   "plugins": [
     "import"
   ],
