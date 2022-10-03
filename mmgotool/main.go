@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/mattermost/mattermost-utilities/mmgotool/commands"
+	"code.sphoton.com/sphotonchat/utilities/mmgotool/commands"
 )
 
 func main() {

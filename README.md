@@ -1,6 +1,4 @@
-# mattermost-utilities: Set of utilities to help in mattermost development
-
-Mattermost is an open source, self-hosted Slack-alternative https://mattermost.org.
+# utilities: Set of utilities to help in mattermost development
 
 Currently this repo contains this two utilities:
 

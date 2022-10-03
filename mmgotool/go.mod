@@ -1,5 +1,3 @@
-module github.com/mattermost/mattermost-utilities/mmgotool
+module code.sphoton.com/sphotonchat/utilities
 
-go 1.14
-
-require github.com/spf13/cobra v1.0.0
+go 1.18

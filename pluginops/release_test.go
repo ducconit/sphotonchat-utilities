@@ -3,7 +3,7 @@ package main_test
 import (
 	"testing"
 
-	pluginops "github.com/mattermost/mattermost-utilities/pluginops"
+	pluginops "code.sphoton.com/sphotonchat/utilities/pluginops"
 	"github.com/stretchr/testify/assert"
 )
 
