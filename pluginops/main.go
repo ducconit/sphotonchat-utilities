@@ -5,6 +5,7 @@ import (
 	"os"
 
 	"github.com/google/go-github/v32/github"
+	"github.com/joho/godotenv"
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
@@ -20,6 +21,7 @@ func init() {
 }
 
 func main() {
+	godotenv.Load()
 	if err := rootCmd.Execute(); err != nil {
 		log.WithError(err).Fatal("command failed")
 	}

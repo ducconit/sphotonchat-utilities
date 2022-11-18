@@ -7,7 +7,7 @@ import (
 	"net"
 	"os"
 
-	"github.com/mattermost/mattermost-server/v6/model"
+	"code.sphoton.com/sphotonchat/server/v6/model"
 )
 
 func getClient() (*model.Client4, error) {
